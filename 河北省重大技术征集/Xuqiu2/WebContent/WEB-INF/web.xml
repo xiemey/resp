@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	
+	<!-- 管理员的操作servlet -->
+	<servlet>
+		<servlet-name>Adminservlet</servlet-name>
+		<servlet-class>com.servlet.Adminservlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Adminservlet</servlet-name>
+		<url-pattern>/admin/adminServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>XuqiuServlet</servlet-name>
+		<servlet-class>com.servlet.XuqiuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>XuqiuServlet</servlet-name>
+		<url-pattern>/admin/xuqiuServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- 用户的操作servlet -->
+	
+	<servlet>
+		<servlet-name>Userservlet</servlet-name>
+		<servlet-class>com.user.servlet.Userservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Userservlet</servlet-name>
+		<url-pattern>/user/userServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserZhengjiservlet</servlet-name>
+		<servlet-class>com.user.servlet.UserZhengjiservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserZhengjiservlet</servlet-name>
+		<url-pattern>/user/userZhengjiServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--权限servlet -->
+	
+	
+	<servlet>
+		<servlet-name>Quanxianservlet</servlet-name>
+		<servlet-class>com.user.servlet.Quanxianservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Quanxianservlet</servlet-name>
+		<url-pattern>/user/quanxianServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+</web-app>
